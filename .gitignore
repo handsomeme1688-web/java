@@ -1,0 +1,11 @@
+# 编译产物（几百个 class 文件，绝不入库）
+target/
+
+# IDE 配置（换台电脑就没用，还含本地路径）
+.idea/
+*.iml
+.vscode/
+
+# 日志和系统垃圾
+*.log
+.DS_Store
