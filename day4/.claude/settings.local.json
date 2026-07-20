@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"F:\\\\IdeaProjects\\\\springboot\\\\day4\\\\*.png\")",
+      "Bash(Select-Object Name, Length)",
+      "PowerShell(Get-ChildItem \"F:\\\\IdeaProjects\\\\springboot\\\\day4\\\\\" | Where-Object { -not $_.PSIsContainer } | Select-Object Name)"
+    ]
+  }
+}

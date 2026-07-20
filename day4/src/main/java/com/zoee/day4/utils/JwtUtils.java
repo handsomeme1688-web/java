@@ -32,6 +32,19 @@ public class JwtUtils {
 
     /**
      * 解析JWT令牌
+     *
+     * [ claims 对象 (实质上是个 Map) ]
+     *    │
+     *    ├── 标准 JWT 声明（自带字段）:
+     *    │     ├── "iss" (Issuer): "明华软件公司" (签发者)
+     *    │     ├── "exp" (Expiration): 1781282022 (令牌过期时间戳)
+     *    │     └── "iat" (Issued At): 1781270000 (令牌签发时间戳)
+     *    │
+     *    └── 自定义自定义声明（你塞进去的业务数据）:
+     *          ├── "id" : 14325       <-- 你的代码执行 claims.get("id") 拿到的就是它！
+     *          ├── "username" : "zoee"
+     *          └── "role" : "admin"
+     *
      * @param jwt
      * @return
      */

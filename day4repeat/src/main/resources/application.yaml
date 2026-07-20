@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: day4repeat
+  datasource:
+    url: jdbc:mysql://localhost:3306/slice_v1
+    username: root
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8088
